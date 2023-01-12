@@ -1,8 +1,14 @@
 # Apocalypse Beauty
 
-**Second group project initiated by Becode.**
+**Moutain Group Project.**
 
-Link of the finished project : [here](https://becodeorg.github.io/hamilton-7-escapium-DaDaQue-1/).
+<!-- Link of the finished project : [here](https://becodeorg.github.io/hamilton-7-escapium-DaDaQue-1/). -->
+
+## **What's the project ?**
+
+A girl who do streaming created her own make-up and skincare brand. She ask us to create a website to combine her streaming community for her make-up and skincare brand.
+
+To do so, we need to create a website with a stream first. So a homepage static like and then incorporate Vue.Js to make it dynamic. For the backend, we need to create a login/register system
 
 ## **Who did this project ?**
 
@@ -14,12 +20,6 @@ Team members : [Olivia](https://github.com/OliviaDemaret), [Christophe](https://
 - Christophe: Frontend.
 - Romain : Backend.
 - David : Fullstack.
-
-## **What's the project ?**
-
-A girl who do streaming created her own make-up and skincare brand. She ask us to create a website to combine her streaming community for her make-up and skincare brand.
-
-To do so, we need to create a website with a stream first. So a homepage static like and then incorporate Vue.Js to make it dynamic. For the backend, we need to create a login/register system
 
 ## **What language are used?**
 
