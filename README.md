@@ -40,12 +40,12 @@ Team members : [Olivia](https://github.com/OliviaDemaret), [Christophe](https://
 
 ## **Some Design Sketches**
 
-![Sketch 1](./assets/img/20230112_102252.jpg "Sketch 1")
-![Sketch 2](./assets/img/20230112_102309.png "Sketch 2")
-![Sketch 3](./assets/img/20230112_102323.png "Sketch 3")
-![Sketch 4](./assets/img/20230112_102331.png "Sketch 4")
-![Sketch 5](./assets/img/20230112_102342.png "Sketch 5")
-![Sketch 6](./assets/img/20230112_102348.png "Sketch 6")
+![Sketch 1](./public/img/20230112_102252.jpg "Sketch 1")
+![Sketch 2](./public/img/20230112_102309.png "Sketch 2")
+![Sketch 3](./public/img/20230112_102323.png "Sketch 3")
+![Sketch 4](./public/img/20230112_102331.png "Sketch 4")
+![Sketch 5](./public/img/20230112_102342.png "Sketch 5")
+![Sketch 6](./public/img/20230112_102348.png "Sketch 6")
 
 ## **What language are used?**
 
