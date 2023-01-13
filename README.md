@@ -8,23 +8,23 @@
 
 A girl who do streaming created her own make-up and skincare brand. She asks us to create a website to combine her streaming community for her make-up and skincare brand.
 
-(3-4 Days)
+16 January - 20 January(3-4 Days) :
 To do so, we need to create a website with a stream first. So a homepage static like and then incorporate Vue.Js to make it dynamic. For the backend, we need to create a login/register system.
 
-(2 days)
-If the homepage is done after 3 days, the front will do the "About" page.
+23 January - 24 January (2 days) :
+If the homepage is done,the front will do the "About" page.
 
-(2 days)
+25 January - 26 January (2 days) :
 Streaming features on the home page go next.
 
-(3 weeks)
+30 January- 17 February (3 weeks) :
 Once the streaming features, the homepage and the about are done entirely, we can start to work on the e-Shop
 
-(7 days)
+20 February- 24 February (7 days) :
 E-Shop features (search-bar, wishlist and basket)
 English and French pages.
 
-(1 week and half)
+27 February - 3 March (1 week and half) :
 Blog with database, add edit and delete articles.
 
 ## **Who did this project ?**
