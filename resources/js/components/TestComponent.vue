@@ -1,3 +1,3 @@
 <template>
-    test !
+    CA MARCHE !!
 </template>

@@ -1,7 +1,7 @@
 import './bootstrap';
 
 import {createApp} from 'vue';
-import App from './App.vue'; //import du composant
+import App from './components/App.vue'; //import du composant
 
 
 createApp(App) //composant principale vue
