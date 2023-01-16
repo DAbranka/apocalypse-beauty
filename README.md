@@ -18,14 +18,10 @@ If the homepage is done,the front will do the "About" page.
 Streaming features on the home page go next.
 
 30 January- 17 February (3 weeks) :
-Once the streaming features, the homepage and the about are done entirely, we can start to work on the e-Shop
+Once the streaming features, the homepage and the about are done entirely, we can start to work on the e-Shop.
+E-Shop features (search-bar, wishlist and basket).
 
-20 February- 24 February (7 days) :
-E-Shop features (search-bar, wishlist and basket)
-English and French pages.
-
-27 February - 3 March (1 week and half) :
-Blog with database, add edit and delete articles.
+Bonuses: English and French pages, blog with database, add edit and delete articles.
 
 ## **Who did this project ?**
 
