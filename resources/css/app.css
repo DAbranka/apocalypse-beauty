@@ -2626,4 +2626,19 @@ body {
   font-weight: bolder;
 }
 
+.testContainer {
+  background-image: url("/home/becode/Documents/BECODE/02-the-hills/Group Projects/apocalypse-beauty/public/img/Accesories/accesories-brushes-illustration.jpg");
+  width: 600px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testContainer .testContainer__title {
+  color: black;
+}
+
 /*# sourceMappingURL=app.css.map */
