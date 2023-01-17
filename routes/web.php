@@ -6,4 +6,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::view('/', 'welcome');
+Route::view('/', './pages/homepage');
+Route::view('/login', 'login');

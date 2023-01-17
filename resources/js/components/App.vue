@@ -5,8 +5,8 @@
 </template>
 
 <script setup>
-import TestComponent from './TestComponent.vue';
 import { onMounted } from 'vue';
+import TestComponent from './TestComponent.vue';
 
 	onMounted
 </script>
