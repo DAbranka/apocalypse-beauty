@@ -1,8 +1,8 @@
 import './bootstrap';
 
 import {createApp} from 'vue';
-import Login from './components/login.vue';
+import Login from './components/Login.vue';
 
 
-loginPage(Login)
+createApp(Login)
 .mount('#login')
