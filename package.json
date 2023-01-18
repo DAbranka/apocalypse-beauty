@@ -2,7 +2,12 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "server": "./vendor/bin/sail up",
+        "dev-watch": "npm run dev",
+        "sass-watch": "cd ./resources/scss && sass --watch main.scss app.css",
+        "start": "npm run server && npm run dev-watch",
+        "js": "concurrently \"npm run dev\" \"npm run sass-watch\""
     },
     "devDependencies": {
         "axios": "^1.1.2",
@@ -15,7 +20,9 @@
     },
     "dependencies": {
         "@vitejs/plugin-vue": "^4.0.0",
+        "concurrently": "^7.6.0",
         "create-scss-cli": "^1.5.6",
+        "nodemon": "^2.0.20",
         "vue": "^3.2.36",
         "vue-loader": "^17.0.1",
         "vue-router": "^4.0.13"
