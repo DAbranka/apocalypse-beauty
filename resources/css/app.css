@@ -2618,8 +2618,28 @@ template {
   line-height: var(--leading--7);
 }
 
+#footer {
+  font-size: 18px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
-  background-color: #050505;
   color: rgb(226, 226, 226);
   font-size: 3rem;
   font-family: sans-serif;
@@ -2627,7 +2647,7 @@ body {
 }
 
 .testContainer {
-  background-image: url("/home/becode/Documents/BECODE/02-the-hills/Group Projects/apocalypse-beauty/public/img/Accesories/accesories-brushes-illustration.jpg");
+  background-image: url("/public/img/Makeup/illustrations/illustration-life-makeup-black-and-white.jpg");
   width: 600px;
   height: 300px;
   background-repeat: no-repeat;

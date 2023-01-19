@@ -1,3 +1,18 @@
 //============
 // Footer
 //============
+
+#footer{
+    font-size: 18px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+.footer-column{display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+ul{list-style-type: none;}
+
+a{text-decoration: none;}
