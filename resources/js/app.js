@@ -1,9 +1,23 @@
-import "./bootstrap";
+import './bootstrap';
+import '../css/app.css';
 
-import { createApp } from "vue";
-import App from "./components/App.vue"; //import du composant
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
+import { createApp, h } from 'vue';
+import { createInertiaApp } from '@inertiajs/vue3';
+import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
+import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 
-createApp(App) //composant principale vue
-    .mount("#app"); // monté sur élément DOM id=app
+const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
+
+createInertiaApp({
+    title: (title) => `${title} - ${appName}`,
+    resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, import.meta.glob('./Pages/**/*.vue')),
+    setup({ el, App, props, plugin }) {
+        return createApp({ render: () => h(App, props) })
+            .use(plugin)
+            .use(ZiggyVue, Ziggy)
+            .mount(el);
+    },
+    progress: {
+        color: '#4B5563',
+    },
+});
