@@ -17,16 +17,16 @@ export default {
 </script>
 
 <template>
-<footer class="flex flex-col justify-evenly py-12">
+<footer class="flex flex-col justify-evenly py-12 font-aclonica">
     <div class="flex flex-row justify-evenly">
 <div class="flex flex-row items-center">
 <img class="w-36" src="/img/logo/apocalypse-beauty-logo-transparent.png"/>
-    <h1 class="font-rubik_vinyl">
-        Apocalypse Beauty
+    <h1 class="font-shojumaru capitalize text-4xl text-center">
+        Apocalypse <br/>Beauty
     </h1>
     </div>
     <div class="flex flex-col ">
-        <h4 class="pb-3.5">Help & Information</h4>
+        <h4 class="pb-3.5 text-lg">Help & Information</h4>
         <ul>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Delivery & Returns</a></li>
@@ -36,7 +36,7 @@ export default {
         </ul>
     </div>
     <div>
-        <h4 class="pb-3.5">Legal</h4>
+        <h4 class="pb-3.5 text-lg">Legal</h4>
         <ul>
             <li><a href="#">Terms & Conditions</a></li>
             <li><a href="#">Privacy</a></li>
@@ -44,7 +44,7 @@ export default {
         </ul>
     </div>
     <div>
-        <h4 class="pb-3.5">Contact Us</h4>
+        <h4 class="pb-3.5 text-lg">Contact Us</h4>
         <ul>
             <li></li>
         </ul>
