@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script></script>
 
 <template>
@@ -13,4 +14,10 @@
         <link rel="stylesheet" href="FORUM">
         <link rel="stylesheet" href="ESHOP">
     </ul>
+=======
+<script>
+</script>
+<template>
+    <h1>Hello</h1>
+>>>>>>> refs/remotes/origin/develop
 </template>
