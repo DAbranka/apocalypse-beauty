@@ -13,6 +13,8 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                aclonica: ['Aclonica', 'sans-serif'],
+                chewy:['Chewy', 'cursive'],
             },
         },
     },

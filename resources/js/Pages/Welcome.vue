@@ -6,11 +6,11 @@ import Footer from '@/Components/Footer.vue';
 
 </script>
 
-<template>
-  <Header>
+<template>  
+    <Header>
 
-  </Header>
-  <Footer>
+    </Header>
+    <Footer>
 
-  </Footer>
+    </Footer>
 </template>
