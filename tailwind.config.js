@@ -14,7 +14,7 @@ module.exports = {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
                 aclonica: ['Aclonica', 'sans-serif'],
-                shojumaru:['Shojumaru', 'cursive'],
+                chewy:['Chewy', 'cursive'],
             },
         },
     },
