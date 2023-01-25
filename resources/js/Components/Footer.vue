@@ -1,10 +1,4 @@
 <script>
-<<<<<<< HEAD
-</script>
-
-<template>
-    
-=======
 export default {
     data(){
         return{
@@ -60,5 +54,4 @@ export default {
 <img class="w-56" src="https://paddleinmastery.com/wp-content/uploads/elementor/thumbs/Payment-Method-logos-p3sjdy67e0tvrapzvo4v20g49x3h6ho46o4ecsisxw.png"/>
     </div>
 </footer>
->>>>>>> refs/remotes/origin/develop
 </template>
