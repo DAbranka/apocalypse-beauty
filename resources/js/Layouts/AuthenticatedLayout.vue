@@ -145,7 +145,26 @@ const showingNavigationDropdown = ref(false);
 
             <!-- Page Content -->
             <main>
-                <slot />
+            <section id="homepage_carousel">
+                <div class="swiffy-slider">
+    <ul class="slider-container">
+        <li><img src="/img/Makeup/illustrations/illustration-brushes-fullset-and-palette.jpg" style="max-width: 100%;height: auto;"></li>
+        <li><img src="/img/Makeup/illustrations/illustration-miscu-makeup-horizontal.jpg" style="max-width: 100%;height: auto;"></li>
+        <li><img src="/img/Makeup/illustrations/illustration-misc-makeup-lips.jpg" style="max-width: 100%;height: auto;"></li>
+        <li><img src="/img/Makeup/illustration/illustration-misc-makeup-aloe.jpg" style="max-width: 100%;height: auto;"></li>
+    
+    </ul>
+
+    <button type="button" class="slider-nav"></button>
+    <button type="button" class="slider-nav slider-nav-next"></button>
+
+    <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+    </div>
+</div>
+            </section>
             </main>
 <!-- Footer Content -->
 
