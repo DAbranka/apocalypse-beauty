@@ -1,16 +1,21 @@
 <script setup>
-
-import Header from '@/Components/Header.vue';
-import Footer from '@/Components/Footer.vue';
-
-
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import { Head } from '@inertiajs/vue3';
 </script>
 
-<template>  
-    <Header>
+<template>
+    <Head title="Dashboard" />
 
-    </Header>
-    <Footer>
+    <AuthenticatedLayout>
+        <template #header>
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Accueil</h2>
+        </template>
 
-    </Footer>
+        <div class="py-12">
+            
+        </div>
+        <template #footer>
+
+        </template>
+    </AuthenticatedLayout>
 </template>

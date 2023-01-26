@@ -11,8 +11,8 @@ const showingNavigationDropdown = ref(false);
 </script>
 
 <template>
-    <div>
-        <div class="min-h-screen bg-gray-100">
+    <div class="flex">
+        <div class="">
             <nav class="bg-white border-b border-gray-100">
                 <!-- Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -147,6 +147,46 @@ const showingNavigationDropdown = ref(false);
             <main>
                 <slot />
             </main>
+<!-- Footer Content -->
+
+            <footer class="flex w-screen  xs:flex-col sm:flex-col md:flex-row lg:flex-row justify-evenly  font-aclonica  text-purple-600">
+    <div class="w-screen pt-10 flex xs:flex-col sm:flex-col md:flex-row lg:flex-row sm:justify-evenly md:justify-evenly lg:justify-evenly bg-black pb-6">
+<div class=" flex flex-wrap justify-center xs:flex-col sm:flex-col md:flex-row lg:flex-row items-center">  
+<img class="w-56 " src="/img/logo/apocalypse-beauty-logo-transparent.png"/>
+    <h1 class=" font-aclonica text-2xl text-center font-bold uppercase text-purple-600 "><a class="hover:text-pink-600" href="#">
+        Apocalypse<br/>Beauty</a>
+    </h1>
+    </div>
+    <div class="px-3 flex flex-col  flex-nowrap  justify-evenly ">
+        <h4 class=" text-lg xs:text-center sm:text-center md:text-start lg:text-start ">Help & Information</h4>
+        <ul class="">
+            <li><a class="text-pink-600 hover:text-purple-600" href="#">FAQ</a></li>
+            <li><a class="text-pink-600 hover:text-purple-600" href="#">Delivery & Returns</a></li>
+            <li><a class="text-pink-600 hover:text-purple-600" href="#">Gift Cards</a></li>
+            <li><a class="text-pink-600 hover:text-purple-600" href="#">About Us</a></li>
+            <li><a class="text-pink-600 hover:text-purple-600" href="#">Careers</a></li>
+        </ul>
+    </div>
+    <div class="flex flex-col justify-evenly px-3">
+        <h4 class=" text-lg xs:text-center sm:text-center md:text-start lg:text-start">Legal</h4>
+        <ul class="">
+            <li><a class="text-pink-600 hover:text-purple-600" href="#">Terms & Conditions</a></li>
+            <li><a class="text-pink-600 hover:text-purple-600" href="#">Privacy</a></li>
+            <li><a class="text-pink-600 hover:text-purple-600" href="#">Cookies</a></li>
+        </ul>
+    </div>
+    <div class=" flex flex-col justify-evenly px-3">
+        <h4 class=" text-lg xs:text-center sm:text-center md:text-start lg:text-start">Contact Us</h4>
+        <ul class="">
+            <li class="text-pink-600"> rue de Mulhouse, 36<br/>4000 LIEGE</li>
+        </ul>
+    </div>
+</div>
+    <div class="  flex flex-col text-center items-center justify-evenly bg-black ">
+<p class=""><span class="text-3xl">© </span>2023 Copyright: Apocalypse-Beauty.com</p>
+<img class="w-56" src="https://paddleinmastery.com/wp-content/uploads/elementor/thumbs/Payment-Method-logos-p3sjdy67e0tvrapzvo4v20g49x3h6ho46o4ecsisxw.png"/>
+    </div>
+</footer>
         </div>
     </div>
 </template>
