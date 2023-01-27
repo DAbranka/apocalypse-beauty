@@ -6,6 +6,7 @@ import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
+import Carousel from '@/Components/Carousel.vue';
 
 const showingNavigationDropdown = ref(false);
 </script>
@@ -146,24 +147,23 @@ const showingNavigationDropdown = ref(false);
             <!-- Page Content -->
             <main>
             <section id="homepage_carousel">
-                <div class="swiffy-slider">
-    <ul class="slider-container">
-        <li><img src="/img/Makeup/illustrations/illustration-brushes-fullset-and-palette.jpg" style="max-width: 100%;height: auto;"></li>
-        <li><img src="/img/Makeup/illustrations/illustration-miscu-makeup-horizontal.jpg" style="max-width: 100%;height: auto;"></li>
-        <li><img src="/img/Makeup/illustrations/illustration-misc-makeup-lips.jpg" style="max-width: 100%;height: auto;"></li>
-        <li><img src="/img/Makeup/illustration/illustration-misc-makeup-aloe.jpg" style="max-width: 100%;height: auto;"></li>
-    
-    </ul>
-
-    <button type="button" class="slider-nav"></button>
-    <button type="button" class="slider-nav slider-nav-next"></button>
-
-    <div class="slider-indicators">
-        <button class="active"></button>
-        <button></button>
-        <button></button>
-    </div>
+                <Carousel>
+                </Carousel>
+            </section>
+            <section id="homepage_articles">
+                <HomepageArticle>
+                    <div id="Homepage_article_wrapper" class=" grid grid-flow-row-dense grid-cols-2 grid-rows-2">
+<div id="Homepage_article_firstarticle" class="row-span-2">
+<img src="/img/Makeup/illustrations/illustration-makeup-bag.jpg" />
 </div>
+<div id="Homepage_article_secondarticle" class="">
+    <img src="/img/Makeup/illustrations/illustration-brushes-powders.jpg"/>
+</div>
+<div id="Homepage_article_thirdarticle" class="">
+    <img src="/img/Makeup/illustrations/illustration-makeup-brushes-magical.jpg"/>
+</div>
+    </div>
+                </HomepageArticle>
             </section>
             </main>
 <!-- Footer Content -->
