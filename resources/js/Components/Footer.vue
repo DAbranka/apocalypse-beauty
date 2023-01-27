@@ -6,7 +6,7 @@ export default {
             help_information: 'Help & Information',
             
         }
-    }
+    },
     methods:{
         apocalypse_beautyFunction: function () {
             return this.message;

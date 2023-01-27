@@ -8,7 +8,9 @@ import Footer from '@/Components/Footer.vue';
 
 <template>  
     <Header>
-
+        <Link :href="href" :class="classes">
+        <slot />
+    </Link>
     </Header>
     <Footer>
 
