@@ -16,6 +16,7 @@ module.exports = {
                 aclonica: ['Aclonica', 'sans-serif'],
                 chewy:['Chewy', 'cursive'],
             },
+        
         },
         screens: {
             'xs': {'min': '1px', 'max': '367px'},
