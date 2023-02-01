@@ -6,14 +6,15 @@ import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
+import Carousel from '@/Components/Carousel.vue';
 
 const showingNavigationDropdown = ref(false);
 </script>
 
 <template>
     <div>
-        <div class="min-h-screen bg-gray-100">
-            <nav class="bg-white border-b border-gray-100">
+        <div class="min-h-screen bg-black">
+            <nav class="bg-pink border-b border-purple-600">
                 <!-- Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
@@ -28,7 +29,7 @@ const showingNavigationDropdown = ref(false);
                             </div>
 
                             <!-- Navigation Links -->
-                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-purple-600">
+                            <div class="font-aclonica hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-purple-600">
                                 
                                 <NavLink :href="route('dashboard')" :active="route().current('')">
                                     News
@@ -152,7 +153,7 @@ const showingNavigationDropdown = ref(false);
                             <div class="font-medium text-sm text-black">{{ $page.props.auth.user.email }}</div>
                         </div>
 
-                        <div class="mt-3 space-y-1">
+                        <div class="mt-3 space-y-1 text-black">
                             <ResponsiveNavLink :href="route('profile.edit')"> Profile </ResponsiveNavLink>
                             <ResponsiveNavLink :href="route('logout')" method="post" as="button">
                                 Log Out
@@ -176,7 +177,25 @@ const showingNavigationDropdown = ref(false);
 
             <!-- Page Content -->
             <main>
-                <slot />
+            <section id="homepage_carousel">
+                <Carousel>
+                </Carousel>
+            </section>
+            <section id="homepage_articles">
+                <HomepageArticle>
+                    <div id="Homepage_article_wrapper" class=" grid grid-flow-row-dense grid-cols-2 grid-rows-2">
+<div id="Homepage_article_firstarticle" class="row-span-2">
+<img src="/img/Makeup/illustrations/illustration-makeup-bag.jpg" />
+</div>
+<div id="Homepage_article_secondarticle" class="">
+    <img src="/img/Makeup/illustrations/illustration-brushes-powders.jpg"/>
+</div>
+<div id="Homepage_article_thirdarticle" class="">
+    <img src="/img/Makeup/illustrations/illustration-makeup-brushes-magical.jpg"/>
+</div>
+    </div>
+                </HomepageArticle>
+            </section>
             </main>
 <!-- Footer Content -->
 
