@@ -7,9 +7,7 @@ import NavLink from "@/Components/NavLink.vue";
 import ResponsiveNavLink from "@/Components/ResponsiveNavLink.vue";
 import { Link } from "@inertiajs/vue3";
 import Carousel from "@/Components/Carousel.vue";
-import index from "@/Pages/News/index.vue";
 import Welcome from "@/Pages/Welcome.vue";
-
 const showingNavigationDropdown = ref(false);
 </script>
 
@@ -165,47 +163,16 @@ const showingNavigationDropdown = ref(false);
                 </div>
 
                 <!-- !Responsive Navigation Menu -->
-                <div
-                    :class="{
-                        block: showingNavigationDropdown,
-                        hidden: !showingNavigationDropdown,
-                    }"
-                    class="sm:hidden"
-                >
+                <div :class="{block: showingNavigationDropdown, hidden: !showingNavigationDropdown}" class="sm:hidden">
                     <div class="pt-2 pb-3 space-y-1 text-purple-600">
-                        <ResponsiveNavLink
-                            :href="route('dashboard')"
-                            :active="route().current('')"
-                        >
-                            News
-                        </ResponsiveNavLink>
-                        <ResponsiveNavLink
-                            :href="route('dashboard')"
-                            :active="route().current('')"
-                        >
-                            About
-                        </ResponsiveNavLink>
-                        <ResponsiveNavLink
-                            :href="route('dashboard')"
-                            :active="route().current('')"
-                        >
-                            Explore
-                        </ResponsiveNavLink>
-                        <ResponsiveNavLink
-                            :href="route('dashboard')"
-                            :active="route().current('')"
-                        >
-                            Forum
-                        </ResponsiveNavLink>
-                        <ResponsiveNavLink
-                            :href="route('dashboard')"
-                            :active="route().current('')"
-                        >
-                            Eshop
-                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('News')" :active="route().current('')">News</ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('About')" :active="route().current('')">About</ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('Explore')" :active="route().current('')">Explore</ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('Forum')" :active="route().current('')">Forum</ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('Eshop')" :active="route().current('')">Eshop</ResponsiveNavLink>
                     </div>
 
-                    <!-- Responsive Settings Options -->
+                    <!-- !Responsive Settings Options -->
                     <div class="pt-4 pb-1 border-t border- bg-pink-600">
                         <div class="px-4">
                             <div class="font-medium text-base text-black">

@@ -4,6 +4,6 @@ import Master from "@/Layouts/Master.vue";
 
 <template>
     <Master>
-        <h1 class="bg-white">NEWS PAGE</h1>
+        <h1 class="bg-white">FORUM PAGE CONTENT</h1>
     </Master>
 </template>
