@@ -17,8 +17,8 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/homepage', function () {
-    return Inertia::render('Homepage', [
+Route::get('/', function () {
+    return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
@@ -36,7 +36,13 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::resource('news', NewsController::class)
-->only('index');
 
-require __DIR__.'/auth.php';
+Route::get('/homepage', function () {
+    return Inertia::render('Homepage');
+})->name('hompage');
+
+Route::get('news', function () {
+    return Inertia::render('News/index');
+})->name('News');
+
+require __DIR__ . '/auth.php';

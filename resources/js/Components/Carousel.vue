@@ -1,8 +1,7 @@
 <!-- Javascript code -->
-
-<script setup>
-
-</script>
 <template>
-
+    <!-- !CAROUSEL -->
+    <section id="homepage_carousel">
+            <Carousel> </Carousel>
+        </section>
 </template>

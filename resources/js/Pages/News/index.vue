@@ -4,6 +4,6 @@ import Master from "@/Layouts/Master.vue";
 
 <template>
     <Master>
-        <h1 class="bg-red-300">HALLOO</h1>
+        <h1 class="bg-white">NEWS PAGE</h1>
     </Master>
 </template>
