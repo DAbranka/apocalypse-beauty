@@ -177,9 +177,9 @@ const showingNavigationDropdown = ref(false);
             </section>
             <section id="homepage_articles">
                 <HomepageArticle>
-                    <div id="Homepage_hero_wrapper" class=" relative my-20 flex flex-row  text-black justify-center items-center text-center font-aclonica ">
-                            <img id="Homepage_herobanner-bg-image" class=" w-9/12" src="/img/Makeup/illustrations/illustration-makeup-brushes-magical.jpg" >
-                                <div id="homepage-hero-banner-message-box" class=" absolute mt-80 ml-80 w-60 h-32 text-center flex flex-col justify-center rounded-2xl  bg-pink-600">
+                    <div id="Homepage_hero_wrapper" class=" relative my-20 flex flex-row  text-black justify-center items-center text-center font-aclonica bg-black ">
+                            <img id="Homepage_herobanner-bg-image" class=" xs:w-11/12  sm:w-11/12 md:w-11/12 lg:w-7/12 my-25" src="/img/Makeup/illustrations/illustration-makeup-brushes-magical.jpg" >
+                                <div id="homepage-hero-banner-message-box" class=" absolute xs:mt-56 xs:ml-32 sm:mt-72 sm:ml-64 md:mt-80 md:ml-80 lg:mt-80 lg:ml-80 w-60 h-32 text-center flex flex-col justify-center rounded-2xl  bg-pink-600">
                                     <h3 class="mb-3">Magical moments with makeup</h3>
                                     
                                             <div id="homepage-hero-banner-show-button" class="text-center  text-purple-600 hover:text-pink-600  ">
@@ -200,7 +200,7 @@ const showingNavigationDropdown = ref(false);
         Apocalypse<br/>Beauty</a>
     </h1>
     </div>
-    <div class="px-3 flex flex-col  flex-nowrap  justify-evenly ">
+    <div class="px-3 flex flex-col justify-start leading-loose">
         <h4 class=" text-lg xs:text-center sm:text-center md:text-start lg:text-start ">Help & Information</h4>
         <ul class="">
             <li><a class="text-pink-600 hover:text-purple-600" href="#">FAQ</a></li>
@@ -210,15 +210,15 @@ const showingNavigationDropdown = ref(false);
             <li><a class="text-pink-600 hover:text-purple-600" href="#">Careers</a></li>
         </ul>
     </div>
-    <div class="flex flex-col justify-evenly px-3">
-        <h4 class=" text-lg xs:text-center sm:text-center md:text-start lg:text-start">Legal</h4>
+    <div class="flex flex-col justify-start leading-loose px-3">
+        <h4 class="text-lg xs:text-center sm:text-center md:text-start lg:text-start">Legal</h4>
         <ul class="">
             <li><a class="text-pink-600 hover:text-purple-600" href="#">Terms & Conditions</a></li>
             <li><a class="text-pink-600 hover:text-purple-600" href="#">Privacy</a></li>
             <li><a class="text-pink-600 hover:text-purple-600" href="#">Cookies</a></li>
         </ul>
     </div>
-    <div class=" flex flex-col justify-evenly px-3">
+    <div class=" flex flex-col justify-start leading-loose px-3">
         <h4 class=" text-lg xs:text-center sm:text-center md:text-start lg:text-start">Contact Us</h4>
         <ul class="">
             <li class="text-pink-600"> rue de Mulhouse, 36<br/>4000 LIEGE</li>
@@ -233,3 +233,5 @@ const showingNavigationDropdown = ref(false);
         </div>
     </div>
 </template>
+
+
