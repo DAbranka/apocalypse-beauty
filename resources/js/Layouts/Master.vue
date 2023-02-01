@@ -7,6 +7,7 @@ import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
 import Carousel from '@/Components/Carousel.vue';
+import index from '@/Pages/News/index.vue';
 
 const showingNavigationDropdown = ref(false);
 </script>
@@ -163,15 +164,9 @@ const showingNavigationDropdown = ref(false);
                 </div>
             </nav>
 
-            <!-- Page Heading -->
-            <header>
-
-            </header>
-
-
-            <!-- Page Content -->
+            <!-- ! PUT PAGES HERE -->
             <main>
-                
+                <slot />
             </main>
             <!-- Footer Content -->
 
