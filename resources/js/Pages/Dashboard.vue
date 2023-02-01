@@ -1,7 +1,7 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import Carousel from '@/Components/Carousel.vue';
-import HomepageArticles from '@/Components/HomepageArticles.vue';
+import HomepageArticles from '@/Components/HomepageHero.vue';
 import { Head } from '@inertiajs/vue3';
 </script>
 
@@ -17,11 +17,11 @@ import { Head } from '@inertiajs/vue3';
 
 </template>
 </Carousel>
-<HomepageArticles>
+<HomepageHero>
     <template #homepagearticles>
 
     </template>
-</HomepageArticles>
+</HomepageHero>
 
        <!--  <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
