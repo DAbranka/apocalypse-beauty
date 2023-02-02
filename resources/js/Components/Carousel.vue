@@ -26,12 +26,12 @@ const swiper = new Swiper('.swiper', {
 </script>
 <template>
 <!-- Slider main container -->
-<div class="bg-pink-600 text-purple-600 font-aclonica flex flex-col">
-<div class="swiper h-auto mt-8 mb-8 w-full">
+<div class="bg-pink-600 text-black font-aclonica flex flex-col">
+<div class="swiper h-auto mt-8 mb-8 w-full h-fit">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide flex flex-col text-center text-lg ">
+    <div class="swiper-slide flex flex-col items-center text-center text-lg ">
       <div class="itemimage block m-0 p-0 text-center">
 <img src="/img/Makeup/eyes/eyeshadow palettes/eyeshadow-palette-sixteenpan-zoom-in.jpg" alt="item" width="200px" height="200px">
 </div>
