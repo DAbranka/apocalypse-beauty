@@ -17,7 +17,7 @@ const showingNavigationDropdown = ref(false);
     <div>
         <div class="min-h-screen bg-black">
             <nav class="bg-pink border-b border-purple-600">
-                <!-- !Primary Navigation Menu -->
+                <!-- Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
                         <div class="flex">
@@ -44,13 +44,9 @@ const showingNavigationDropdown = ref(false);
                             </NavLink>
 
                             <!-- Navigation Links -->
-                            <div
-                                class="font-aclonica hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-purple-600"
-                            >
-                                <NavLink
-                                    :href="route('News')"
-                                    :active="route().current('')"
-                                >
+                            <div class="font-aclonica hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-purple-600">
+                                
+                                <NavLink :href="route('dashboard')" :active="route().current('')">
                                     News
                                 </NavLink>
                                 <NavLink
@@ -127,7 +123,7 @@ const showingNavigationDropdown = ref(false);
                         </div>
 
                         <!-- Hamburger -->
-                        <div class="-mr-2 flex items-center sm:hidden">
+                        <div class="-mr-2 xs:flex sm:flex items-center hidden">
                             <button
                                 @click="
                                     showingNavigationDropdown =
