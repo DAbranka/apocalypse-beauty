@@ -10,14 +10,14 @@ import { Head } from '@inertiajs/vue3';
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-black leading-tight">Accueil</h2>
+            <h2 class="font-semibold text-xl text-black leading-tight">
+                Accueil
+            </h2>
         </template>
 
-        <Carousel>
-<template #carousel>
-
-</template>
-        </Carousel>
+        <!-- <Carousel>
+            <template #carousel> </template>
+        </Carousel> -->
 
         <HomepageHero>
             <template #homepagearticles>
@@ -32,3 +32,4 @@ import { Head } from '@inertiajs/vue3';
         </template>
     </AuthenticatedLayout>
 </template>
+

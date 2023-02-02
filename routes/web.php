@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -35,4 +36,29 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+
+Route::get('/homepage', function () {
+    return Inertia::render('Homepage');
+})->name('hompage');
+
+Route::get('news', function () {
+    return Inertia::render('Links/News/news-index');
+})->name('News');
+
+Route::get('about', function () {
+    return Inertia::render('Links/About/about-index');
+})->name('About');
+
+Route::get('explore', function () {
+    return Inertia::render('Links/Explore/explore-index');
+})->name('Explore');
+
+Route::get('forum', function () {
+    return Inertia::render('Links/Forum/forum-index');
+})->name('Forum');
+
+Route::get('eshop', function () {
+    return Inertia::render('Links/Eshop/eshop-index');
+})->name('Eshop');
+
+require __DIR__ . '/auth.php';
