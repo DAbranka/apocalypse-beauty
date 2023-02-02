@@ -25,7 +25,7 @@ const showingNavigationDropdown = ref(false);
                                 <img class="w-16 items-start mt-0.5" src="/img/logo/apocalypse-beauty-logo-transparent.png" alt="">
                             </div>
 
-                            <div class="justify-items-center">
+                            <div class="flex">
                                 <h1 class=" font-aclonica text-xl text-center font-bold uppercase text-purple-600 ">Apocalypse Beauty</h1>
                             </div>
 
@@ -126,27 +126,27 @@ const showingNavigationDropdown = ref(false);
                     :class="{ block: showingNavigationDropdown, hidden: !showingNavigationDropdown }"
                     class="sm:hidden"
                 >
-                    <div class="pt-2 pb-3 space-y-1 text-purple-600">
+                    <div class="pt-2 pb-3 space-y-1  bg-black">
                         
-                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('')">
+                        <ResponsiveNavLink class="hover:text-pink-600  text-purple-600 font-aclonica border-pink-600" :href="route('dashboard')" :active="route().current('')">
                                     News
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('')">
+                        <ResponsiveNavLink class="hover:text-pink-600  text-purple-600 font-aclonica border-pink-600" :href="route('dashboard')" :active="route().current('')">
                             About
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('')">
+                        <ResponsiveNavLink class="hover:text-pink-600  text-purple-600 font-aclonica border-pink-600" :href="route('dashboard')" :active="route().current('')">
                             Explore
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('')">
+                        <ResponsiveNavLink class="hover:text-pink-600  text-purple-600 font-aclonica border-pink-600" :href="route('dashboard')" :active="route().current('')">
                             Forum
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('')">
+                        <ResponsiveNavLink class="hover:text-pink-600  text-purple-600 font-aclonica border-pink-600" :href="route('dashboard')" :active="route().current('')">
                             Eshop
                         </ResponsiveNavLink>
                     </div>
 
                     <!-- Responsive Settings Options -->
-                    <div class="pt-4 pb-1 border-t border- bg-pink-600">
+                    <div class="pt-4 pb-1 border-t border- font-aclonica bg-pink-600 text-black">
                         <div class="px-4">
                             <div class="font-medium text-base text-black">
                                 {{ $page.props.auth.user.name }}
@@ -154,7 +154,7 @@ const showingNavigationDropdown = ref(false);
                             <div class="font-medium text-sm text-black">{{ $page.props.auth.user.email }}</div>
                         </div>
 
-                        <div class="mt-3 space-y-1 text-black">
+                        <div class="mt-3 space-y-1 text-black font-aclonica ">
                             <ResponsiveNavLink :href="route('profile.edit')"> Profile </ResponsiveNavLink>
                             <ResponsiveNavLink :href="route('logout')" method="post" as="button">
                                 Log Out

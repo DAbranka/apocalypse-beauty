@@ -10,7 +10,7 @@ import { Head } from '@inertiajs/vue3';
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-black leading-tight">Dashboard</h2>
+            <h2 class="font-semibold text-xl text-black leading-tight bg-black">Dashboard</h2>
         </template>
 <Carousel>
 <template #carousel>
