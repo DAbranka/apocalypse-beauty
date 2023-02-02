@@ -1,6 +1,4 @@
-<script setup>
 
-</script>
 
 <template>
             <div id="Homepage_hero_wrapper" class=" relative my-20 flex flex-row  text-black justify-center items-center text-center font-aclonica bg-black ">
