@@ -1,7 +1,8 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import Carousel from '@/Components/Carousel.vue';
-import HomepageArticles from '@/Components/HomepageHero.vue';
+import HomepageHero from '@/Components/HomepageHero.vue';
+import Stream from '@/Components/Stream.vue';
 import { Head } from '@inertiajs/vue3';
 </script>
 
@@ -15,18 +16,26 @@ import { Head } from '@inertiajs/vue3';
             </h2>
         </template>
 
-        <!-- <Carousel>
-            <template #carousel> </template>
-        </Carousel> -->
-
         <HomepageHero>
             <template #homepagearticles>
 
             </template>
         </HomepageHero>
-        <div class="py-12">
-            
-        </div>
+       
+        <Stream>
+            <template #homepagestream>
+
+            </template>
+        </Stream>
+
+        <Carousel>
+<template #homestream>
+
+</template>
+
+        </Carousel>
+
+
         <template #footer>
 
         </template>

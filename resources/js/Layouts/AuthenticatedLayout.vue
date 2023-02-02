@@ -7,6 +7,8 @@ import NavLink from "@/Components/NavLink.vue";
 import ResponsiveNavLink from "@/Components/ResponsiveNavLink.vue";
 import { Link } from "@inertiajs/vue3";
 import Carousel from "@/Components/Carousel.vue";
+import Stream from "@/Components/Stream.vue";
+import HomepageHero from '@/Components/HomepageHero.vue';
 
 const showingNavigationDropdown = ref(false);
 </script>
@@ -248,7 +250,7 @@ const showingNavigationDropdown = ref(false);
             <!-- !Page Content -->
             <main>
                 <section id="homepagehero">
-                    <HomepageArticles>
+                    <HomepageHero>
                         <div
                             id="Homepage_hero_wrapper"
                             class="relative my-20 flex flex-row text-black justify-center items-center text-center font-aclonica bg-black"
@@ -279,33 +281,11 @@ const showingNavigationDropdown = ref(false);
                                 </div>
                             </div>
                         </div>
-                    </HomepageArticles>
+                    </HomepageHero>
                 </section>
                 <section id="homepage_stream">
                     <Stream>
-                        <div
-                            class="mt-12 grid grid-cols-2 font-aclonica bg-black text-purple-600"
-                        >
-                            <div>
-                                <h2 class="text-xl text-bold mb-4 mx-5">
-                                    Présentation Streameuse
-                                </h2>
-                                <p class="m-5 text-justify">
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit.
-                                </p>
-                            </div>
-                            <div>
-                                <h2 class="text-xl text-bold mb-4 mx-5">
-                                    Présentation Streameuse
-                                </h2>
-                                <p class="m-5 text-justify">
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit.
-                                </p>
-                            </div>
-                            <div></div>
-                        </div>
+                      
                     </Stream>
                 </section>
                 <section id="homepage_carousel">
