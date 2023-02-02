@@ -2,7 +2,7 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import Carousel from '@/Components/Carousel.vue';
 import HomepageHero from '@/Components/HomepageHero.vue';
-import Stream from "@Components/Stream.vue";
+import Stream from "@/Components/Stream.vue";
 import { Head } from '@inertiajs/vue3';
 </script>
 

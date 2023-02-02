@@ -1,6 +1,12 @@
 <!-- Javascript code -->
 
 <script setup>
+const classes = new Swiper(() =>
+    props.active
+        ? ''
+        : ''
+);
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'vertical',
@@ -27,7 +33,7 @@ const swiper = new Swiper('.swiper', {
 <template>
 <!-- Slider main container -->
 <div class="bg-pink-600 text-black font-aclonica flex flex-col">
-<div class="swiper h-auto mt-8 mb-8 w-full h-fit">
+<div :class="Swiper" class="swiper h-auto mt-8 mb-8 w-full h-fit">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
@@ -88,7 +94,7 @@ const swiper = new Swiper('.swiper', {
 </div>
     </div>
    
-    ...
+  
   </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
