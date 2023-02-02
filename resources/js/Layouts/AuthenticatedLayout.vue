@@ -25,9 +25,11 @@ const showingNavigationDropdown = ref(false);
                                 <img class="w-16 items-start mt-0.5" src="/img/logo/apocalypse-beauty-logo-transparent.png" alt="">
                             </div>
 
-                            <div class="justify-items-center">
+                            <NavLink :href="route('dashboard')" :active="route().current('')">
+                                <div class="justify-items-center">
                                 <h1 class=" font-aclonica text-xl text-center font-bold uppercase text-purple-600 ">Apocalypse Beauty</h1>
                             </div>
+                            </NavLink>
 
                             <!-- Navigation Links -->
                             <div class="font-aclonica hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-purple-600">
@@ -129,18 +131,18 @@ const showingNavigationDropdown = ref(false);
                     <div class="pt-2 pb-3 space-y-1 text-purple-600">
                         
                         <ResponsiveNavLink :href="route('News')" :active="route().current('')">
-                                    News
+                            News
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('')">
+                        <ResponsiveNavLink :href="route('About')" :active="route().current('')">
                             About
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('')">
+                        <ResponsiveNavLink :href="route('Explore')" :active="route().current('')">
                             Explore
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('')">
+                        <ResponsiveNavLink :href="route('Forum')" :active="route().current('')">
                             Forum
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('')">
+                        <ResponsiveNavLink :href="route('Eshop')" :active="route().current('')">
                             Eshop
                         </ResponsiveNavLink>
                     </div>

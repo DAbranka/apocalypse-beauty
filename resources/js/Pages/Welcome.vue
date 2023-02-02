@@ -15,9 +15,9 @@ import { Head } from "@inertiajs/vue3";
             </h2>
         </template>
 
-        <Carousel>
+        <!-- <Carousel>
             <template #carousel> </template>
-        </Carousel>
+        </Carousel> -->
 
         <HomepageArticles>
             <template #homepagearticles> </template>

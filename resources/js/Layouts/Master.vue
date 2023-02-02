@@ -28,13 +28,11 @@ const showingNavigationDropdown = ref(false);
                                 />
                             </div>
 
-                            <div class="justify-items-center">
-                                <h1
-                                    class="font-aclonica text-xl text-center font-bold uppercase text-purple-600"
-                                >
-                                    Apocalypse Beauty
-                                </h1>
+                            <NavLink :href="route('dashboard')" :active="route().current('')">
+                                <div class="justify-items-center">
+                                <h1 class=" font-aclonica text-xl text-center font-bold uppercase text-purple-600 ">Apocalypse Beauty</h1>
                             </div>
+                            </NavLink>
 
                             <!-- !Navigation Links -->
                             <div
