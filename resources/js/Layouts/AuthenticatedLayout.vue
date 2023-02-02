@@ -247,44 +247,67 @@ const showingNavigationDropdown = ref(false);
 
             <!-- !Page Content -->
             <main>
-            
-            <section id="homepagehero">
-                <HomepageArticles>
-                    <div id="Homepage_hero_wrapper" class=" relative my-20  flex flex-row  text-black justify-center items-center text-center font-aclonica bg-black ">
-                            <img id="Homepage_herobanner-bg-image" class=" xs:w-11/12  sm:w-11/12 md:w-11/12 lg:w-7/12 my-25" src="/img/Makeup/illustrations/illustration-makeup-brushes-magical.jpg" >
-                                <div id="homepage-hero-banner-message-box" class=" absolute xs:mt-56 xs:ml-32 sm:mt-72 sm:ml-64 md:mt-80 md:ml-80 lg:mt-80 lg:ml-80 w-60 h-32 text-center flex flex-col justify-center rounded-2xl  bg-pink-600">
-                                    <h3 class="mb-3">Magical moments with makeup</h3>
-                                    
-                                            <div id="homepage-hero-banner-show-button" class="text-center  text-purple-600 hover:text-pink-600  ">
-                                            <a href="#"><span class="bg-black py-2 px-5  rounded-xl">Show</span></a>
-                                            </div>
+                <section id="homepagehero">
+                    <HomepageArticles>
+                        <div
+                            id="Homepage_hero_wrapper"
+                            class="relative my-20 flex flex-row text-black justify-center items-center text-center font-aclonica bg-black"
+                        >
+                            <img
+                                id="Homepage_herobanner-bg-image"
+                                class="xs:w-11/12 sm:w-11/12 md:w-11/12 lg:w-7/12 my-25"
+                                src="/img/Makeup/illustrations/illustration-makeup-brushes-magical.jpg"
+                            />
+                            <div
+                                id="homepage-hero-banner-message-box"
+                                class="absolute xs:mt-56 xs:ml-32 sm:mt-72 sm:ml-64 md:mt-80 md:ml-80 lg:mt-80 lg:ml-80 w-60 h-32 text-center flex flex-col justify-center rounded-2xl bg-pink-600"
+                            >
+                                <h3 class="mb-3">
+                                    Magical moments with makeup
+                                </h3>
+
+                                <div
+                                    id="homepage-hero-banner-show-button"
+                                    class="text-center text-purple-600 hover:text-pink-600"
+                                >
+                                    <a href="#"
+                                        ><span
+                                            class="bg-black py-2 px-5 rounded-xl"
+                                            >Show</span
+                                        ></a
+                                    >
                                 </div>
-                    </div>
-                </HomepageArticles>
-            </section>
-<section id="homepage_stream">
-<Stream>
-    <div class=" mt-12 grid grid-cols-2 font-aclonica bg-black text-purple-600">
-        <div>
-<h2 class="text-xl text-bold mb-4 mx-5">Présentation Streameuse</h2>
-<p class="m-5 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-        </div>
-        <div>
-            <h2 class="text-xl text-bold mb-4 mx-5">Présentation Streameuse</h2>
-<p class="m-5 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-        </div>
-        <div>
-
-        </div>
-    </div>
-</Stream>
-</section>
-
-            <section id="homepage_carousel">
-                <Carousel>
-                    
-                </Carousel>
-            </section>
+                            </div>
+                        </div>
+                    </HomepageArticles>
+                </section>
+                <section id="homepage_stream">
+                    <Stream>
+                        <div
+                            class="mt-12 grid grid-cols-2 font-aclonica bg-black text-purple-600"
+                        >
+                            <div>
+                                <h2 class="text-xl text-bold mb-4 mx-5">
+                                    Présentation Streameuse
+                                </h2>
+                                <p class="m-5 text-justify">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                            <div>
+                                <h2 class="text-xl text-bold mb-4 mx-5">
+                                    Présentation Streameuse
+                                </h2>
+                                <p class="m-5 text-justify">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                            <div></div>
+                        </div>
+                    </Stream>
+                </section>
                 <section id="homepage_carousel">
                     <Carousel>
                         <!-- Slider main container -->
@@ -433,82 +456,7 @@ const showingNavigationDropdown = ref(false);
                         </div>
                     </Carousel>
                 </section>
-                <section id="homepage_articles">
-                    <HomepageHero>
-                        <div
-                            id="Homepage_hero_wrapper"
-                            class="relative my-20 flex flex-row text-black justify-center items-center text-center font-aclonica bg-black"
-                        >
-                            <img
-                                id="Homepage_herobanner-bg-image"
-                                class="xs:w-11/12 sm:w-11/12 md:w-11/12 lg:w-7/12 my-25"
-                                src="/img/Makeup/illustrations/illustration-makeup-brushes-magical.jpg"
-                            />
-                            <div
-                                id="homepage-hero-banner-message-box"
-                                class="absolute xs:mt-56 xs:ml-32 sm:mt-72 sm:ml-64 md:mt-80 md:ml-80 lg:mt-80 lg:ml-80 w-60 h-32 text-center flex flex-col justify-center rounded-2xl bg-pink-600"
-                            >
-                                <h3 class="mb-3">
-                                    Magical moments with makeup
-                                </h3>
-
-                                <div
-                                    id="homepage-hero-banner-show-button"
-                                    class="text-center text-purple-600 hover:text-pink-600"
-                                >
-                                    <a href="#"
-                                        ><span
-                                            class="bg-black py-2 px-5 rounded-xl"
-                                            >Show</span
-                                        ></a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </HomepageHero>
-                </section>
             </main>
-
-<!-- Footer Content -->
-
-            <footer class="flex w-screen  xs:flex-col sm:flex-col md:flex-row lg:flex-row justify-evenly  font-aclonica  text-purple-600">
-    <div class="w-screen pt-10 flex xs:flex-col sm:flex-col md:flex-row lg:flex-row sm:justify-evenly md:justify-evenly lg:justify-evenly bg-black pb-6">
-<div class=" flex flex-wrap justify-center xs:flex-col sm:flex-col md:flex-row lg:flex-row items-center">  
-<img class="w-56 " src="/img/logo/apocalypse-beauty-logo-transparent.png"/>
-    <h1 class=" font-aclonica text-2xl text-center font-bold uppercase text-purple-600 "><a class="hover:text-pink-600" href="#">
-        Apocalypse<br/>Beauty</a>
-    </h1>
-    </div>
-    <div class="px-3 flex flex-col justify-start leading-loose">
-        <h4 class=" text-lg xs:text-center sm:text-center md:text-start lg:text-start ">Help & Information</h4>
-        <ul class="">
-            <li><a class="text-pink-600 hover:text-purple-600" href="#">FAQ</a></li>
-            <li><a class="text-pink-600 hover:text-purple-600" href="#">Delivery & Returns</a></li>
-            <li><a class="text-pink-600 hover:text-purple-600" href="#">Gift Cards</a></li>
-            <li><a class="text-pink-600 hover:text-purple-600" href="#">About Us</a></li>
-            <li><a class="text-pink-600 hover:text-purple-600" href="#">Careers</a></li>
-        </ul>
-    </div>
-    <div class="flex flex-col justify-start leading-loose px-3">
-        <h4 class="text-lg xs:text-center sm:text-center md:text-start lg:text-start">Legal</h4>
-        <ul class="">
-            <li><a class="text-pink-600 hover:text-purple-600" href="#">Terms & Conditions</a></li>
-            <li><a class="text-pink-600 hover:text-purple-600" href="#">Privacy</a></li>
-            <li><a class="text-pink-600 hover:text-purple-600" href="#">Cookies</a></li>
-        </ul>
-    </div>
-    <div class=" flex flex-col justify-start leading-loose px-3">
-        <h4 class=" text-lg xs:text-center sm:text-center md:text-start lg:text-start">Contact Us</h4>
-        <ul class="">
-            <li class="text-pink-600"> rue de Mulhouse, 36<br/>4000 LIEGE</li>
-        </ul>
-    </div>
-</div>
-    <div class="  flex flex-col text-center items-center justify-evenly bg-black ">
-<p class=""><span class="text-3xl">© </span>2023 Copyright: Apocalypse-Beauty.com</p>
-<img class="w-56" src="https://paddleinmastery.com/wp-content/uploads/elementor/thumbs/Payment-Method-logos-p3sjdy67e0tvrapzvo4v20g49x3h6ho46o4ecsisxw.png"/>
-    </div>
-</footer>
             <!-- !Footer Content -->
             <footer
                 class="flex w-screen xs:flex-col sm:flex-col md:flex-row lg:flex-row justify-evenly font-aclonica text-purple-600"
