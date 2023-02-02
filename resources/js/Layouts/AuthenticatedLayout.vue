@@ -288,16 +288,7 @@ const showingNavigationDropdown = ref(false);
                         >
                             <div>
                                 <h2 class="text-xl text-bold mb-4 mx-5">
-                                    Présentation Streameuse
-                                </h2>
-                                <p class="m-5 text-justify">
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit.
-                                </p>
-                            </div>
-                            <div>
-                                <h2 class="text-xl text-bold mb-4 mx-5">
-                                    Présentation Streameuse
+                                    Présentation Streameuse & marque de Makeup
                                 </h2>
                                 <p class="m-5 text-justify">
                                     Lorem ipsum, dolor sit amet consectetur
