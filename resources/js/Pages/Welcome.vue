@@ -26,3 +26,4 @@ import { Head } from "@inertiajs/vue3";
         <template #footer> </template>
     </AuthenticatedLayout>
 </template>
+

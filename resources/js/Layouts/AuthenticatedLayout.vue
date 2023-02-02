@@ -7,6 +7,7 @@ import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
 import Carousel from '@/Components/Carousel.vue';
+import Welcome from '@/Pages/Welcome.vue';
 
 const showingNavigationDropdown = ref(false);
 </script>
@@ -15,11 +16,11 @@ const showingNavigationDropdown = ref(false);
     <div>
         <div class="min-h-screen bg-black">
             <nav class="bg-pink border-b border-purple-600">
-                <!-- Primary Navigation Menu -->
+                <!-- !Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
                         <div class="flex">
-                            <!-- Logo -->
+                            <!-- !Logo -->
                             <div class="shrink-0 flex items-center">
                                 <img class="w-16 items-start mt-0.5" src="/img/logo/apocalypse-beauty-logo-transparent.png" alt="">
                             </div>
@@ -120,7 +121,7 @@ const showingNavigationDropdown = ref(false);
                     </div>
                 </div>
 
-            <!-- Responsive Navigation Menu -->
+            <!-- !Responsive Navigation Menu -->
                 <div
                     :class="{ block: showingNavigationDropdown, hidden: !showingNavigationDropdown }"
                     class="sm:hidden"
@@ -163,18 +164,16 @@ const showingNavigationDropdown = ref(false);
                 </div>
             </nav>
 
-            <!-- Page Heading -->
+            <!-- !Page Heading -->
             <header>
 
             </header>
 
-
-            <!-- Page Content -->
+            <!-- !Page Content -->
             <main>
-                
+                <slot />
             </main>
-            <!-- Footer Content -->
-
+            <!-- !Footer Content -->
             <footer class="flex w-screen  xs:flex-col sm:flex-col md:flex-row lg:flex-row justify-evenly  font-aclonica  text-purple-600">
     <div class="w-screen pt-10 flex xs:flex-col sm:flex-col md:flex-row lg:flex-row sm:justify-evenly md:justify-evenly lg:justify-evenly bg-black pb-6">
 <div class=" flex flex-wrap justify-center xs:flex-col sm:flex-col md:flex-row lg:flex-row items-center">  
