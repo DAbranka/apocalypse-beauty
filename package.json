@@ -18,6 +18,6 @@
         "vue": "^3.2.41"
     },
     "dependencies": {
-        "swiper": "^8.4.6"
+        "swiper": "^8.4.7"
     }
 }

@@ -9,6 +9,7 @@ import { Link } from '@inertiajs/vue3';
 import Carousel from '@/Components/Carousel.vue';
 
 
+
 const showingNavigationDropdown = ref(false);
 </script>
 
@@ -172,89 +173,10 @@ const showingNavigationDropdown = ref(false);
 
             <!-- Page Content -->
             <main>
-            <section id="homepage_carousel">
-                <Carousel>
-
-<!-- Slider main container -->
-<div class="bg-pink-600 text-purple-600 font-aclonica flex flex-col">
-<div class="swiper h-auto mt-8 mb-8 w-full">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide flex flex-col text-center items-center text-lg ">
-      <div class="itemimage block m-0 p-0 text-center">
-<img class="py-10" src="/img/Makeup/eyes/eyeshadow palettes/eyeshadow-palette-sixteenpan-zoom-in.jpg" alt="item" width="200px" height="200px">
-</div>
-<div class="itembody text-center p-0">
-<div class="itemtitle text-xl mb-1 p-2.5 font-bold"> Eyeshadow palette</div>
-<div class="itemdescription p-2.5 m-2.5"> Eyeshadow palette sixteen <br> pan natural colours</div>
-<div ><a href="#"><span class="text-lg text-purple-600 hover:text-pink-600 bg-black border-none rounded-xl p-2">See the product</span></a></div>
-</div>
-</div>
-    
-<div class="swiper-slide">
-  <div class="itemimage">
-<img src="/img/Makeup/lips/lipsticks/lipsticks-lipstick-alone.jpg" alt="item" width="200px" height="200px">
-</div>
-<div class="itembody">
-<div class="itemtitle"> Lipstick red </div>
-<div class="itemdescription"> Lipstick red</div>
-<div><a href="#">See the product</a></div>
-</div>
-</div>
-
-
-<div class="swiper-slide">
-  <div class="itemimage">
-<img src="/img/Makeup/complexion products/highlighters/highlighter-zoom-in.jpg" alt="item" width="200px" height="200px">
-</div>
-<div class="itembody">
-<div class="itemtitle"> Highlighter</div>
-<div class="itemdescription"> Highlighter</div>
-<div><a href="#">See the product</a></div>
-</div>
-</div>
-
-
-<div class="swiper-slide">
-  <div class="itemimage">
-<img src="/img/Makeup/complexion products/bronzers/bronzer.jpg" alt="item" width="180px" height="230px">
-</div>
-<div class="itembody">
-<div class="itemtitle"> Bronzer</div>
-<div class="itemdescription"> Bronzer</div>
-<div><a href="#">See the product</a></div>
-</div>
-</div>
-
-<div class="swiper-slide">
-  <div class="itemimage">
-<img src="/img/Makeup/complexion products/face palettes/face-palettes.jpg" alt="item" width="200px" height="200px">
-</div><div class="itembody">
-<div class="itemtitle"> Face palettes</div>
-<div class="itemdescription"> Face palette</div>
-<div><a href="#">See the product</a></div>
-</div>
-</div>
-    </div>
-   
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
-                </Carousel>
-            </section>
-            <section id="homepage_articles">
-                <HomepageHero>
-                    <div id="Homepage_hero_wrapper" class=" relative my-20 flex flex-row  text-black justify-center items-center text-center font-aclonica bg-black ">
+            
+            <section id="homepagehero">
+                <HomepageArticles>
+                    <div id="Homepage_hero_wrapper" class=" relative my-20  flex flex-row  text-black justify-center items-center text-center font-aclonica bg-black ">
                             <img id="Homepage_herobanner-bg-image" class=" xs:w-11/12  sm:w-11/12 md:w-11/12 lg:w-7/12 my-25" src="/img/Makeup/illustrations/illustration-makeup-brushes-magical.jpg" >
                                 <div id="homepage-hero-banner-message-box" class=" absolute xs:mt-56 xs:ml-32 sm:mt-72 sm:ml-64 md:mt-80 md:ml-80 lg:mt-80 lg:ml-80 w-60 h-32 text-center flex flex-col justify-center rounded-2xl  bg-pink-600">
                                     <h3 class="mb-3">Magical moments with makeup</h3>
@@ -264,9 +186,33 @@ const showingNavigationDropdown = ref(false);
                                             </div>
                                 </div>
                     </div>
-                </HomepageHero>
+                </HomepageArticles>
+            </section>
+<section id="homepage_stream">
+<Stream>
+    <div class=" mt-12 grid grid-cols-2 font-aclonica bg-black text-purple-600">
+        <div>
+<h2 class="text-xl text-bold mb-4 mx-5">Présentation Streameuse</h2>
+<p class="m-5 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div>
+            <h2 class="text-xl text-bold mb-4 mx-5">Présentation Streameuse</h2>
+<p class="m-5 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</Stream>
+</section>
+
+            <section id="homepage_carousel">
+                <Carousel>
+                    
+                </Carousel>
             </section>
             </main>
+
 <!-- Footer Content -->
 
             <footer class="flex w-screen  xs:flex-col sm:flex-col md:flex-row lg:flex-row justify-evenly  font-aclonica  text-purple-600">
