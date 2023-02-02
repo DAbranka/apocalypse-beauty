@@ -15,10 +15,10 @@ const showingNavigationDropdown = ref(false);
 <template>
     <div>
         <div class="min-h-screen bg-black">
-            <nav class="bg-pink border-b border-purple-600">
+            <nav class="bg-pink border-b border-purple-600 flex items-center ">
                 <!-- Primary Navigation Menu -->
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="flex justify-between h-16">
+                <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-around h-16">
                         <div class="flex">
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
@@ -30,7 +30,7 @@ const showingNavigationDropdown = ref(false);
                             </div>
 
                             <!-- Navigation Links -->
-                            <div class="font-aclonica hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-purple-600">
+                            <div class="font-aclonica hidden <!-- space-x-8 sm:-my-px sm:ml-10 --> text-purple-600 md:flex lg:flex">
                                 
                                 <NavLink :href="route('dashboard')" :active="route().current('')">
                                     News
@@ -89,7 +89,7 @@ const showingNavigationDropdown = ref(false);
                         </div>
 
                         <!-- Hamburger -->
-                        <div class="-mr-2 flex items-center sm:hidden">
+                        <div class="-mr-2 xs:flex sm:flex items-center hidden">
                             <button
                                 @click="showingNavigationDropdown = !showingNavigationDropdown"
                                 class="inline-flex items-center justify-center p-2 rounded-md text-pink-600 hover:text-black hover:bg-purple-600 focus:outline-none focus:bg-black focus:text-pink-600 transition duration-150 ease-in-out"
