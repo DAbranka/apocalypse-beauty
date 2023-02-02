@@ -23,17 +23,17 @@ const submit = () => {
     <GuestLayout>
         <Head title="Forgot Password" />
 
-        <div class="mb-4 text-sm text-gray-600">
+        <div class="font-aclonica mb-4 text-sm text-gray-500">
             Forgot your password? No problem. Just let us know your email address and we will email you a password reset
             link that will allow you to choose a new one.
         </div>
 
-        <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
+        <div v-if="status" class="font-aclonica mb-4 font-medium text-sm text-pink-600">
             {{ status }}
         </div>
 
         <form @submit.prevent="submit">
-            <div>
+            <div class="font-aclonica">
                 <InputLabel for="email" value="Email" />
 
                 <TextInput
@@ -49,7 +49,7 @@ const submit = () => {
                 <InputError class="mt-2" :message="form.errors.email" />
             </div>
 
-            <div class="flex items-center justify-end mt-4">
+            <div class="font-aclonica  lex items-center justify-end mt-4">
                 <PrimaryButton :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                     Email Password Reset Link
                 </PrimaryButton>

@@ -1,8 +1,8 @@
 <script setup>
-import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
-import Carousel from "@/Components/Carousel.vue";
-import HomepageArticles from "@/Components/HomepageArticles.vue";
-import { Head } from "@inertiajs/vue3";
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import Carousel from '@/Components/Carousel.vue';
+import HomepageArticles from '@/Components/HomepageHero.vue';
+import { Head } from '@inertiajs/vue3';
 </script>
 
 <template>
@@ -19,11 +19,17 @@ import { Head } from "@inertiajs/vue3";
             <template #carousel> </template>
         </Carousel> -->
 
-        <HomepageArticles>
-            <template #homepagearticles> </template>
-        </HomepageArticles>
-        <div class="py-12"></div>
-        <template #footer> </template>
+        <HomepageHero>
+            <template #homepagearticles>
+
+            </template>
+        </HomepageHero>
+        <div class="py-12">
+            
+        </div>
+        <template #footer>
+
+        </template>
     </AuthenticatedLayout>
 </template>
 

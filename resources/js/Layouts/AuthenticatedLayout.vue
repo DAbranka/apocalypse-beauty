@@ -7,7 +7,7 @@ import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
 import Carousel from '@/Components/Carousel.vue';
-import Welcome from '@/Pages/Welcome.vue';
+
 
 const showingNavigationDropdown = ref(false);
 </script>
@@ -25,8 +25,7 @@ const showingNavigationDropdown = ref(false);
                                 <img class="w-16 items-start mt-0.5" src="/img/logo/apocalypse-beauty-logo-transparent.png" alt="">
                             </div>
 
-                            <NavLink :href="route('dashboard')" :active="route().current('')">
-                                <div class="justify-items-center">
+                            <div class="flex">
                                 <h1 class=" font-aclonica text-xl text-center font-bold uppercase text-purple-600 ">Apocalypse Beauty</h1>
                             </div>
                             </NavLink>
@@ -128,27 +127,27 @@ const showingNavigationDropdown = ref(false);
                     :class="{ block: showingNavigationDropdown, hidden: !showingNavigationDropdown }"
                     class="sm:hidden"
                 >
-                    <div class="pt-2 pb-3 space-y-1 text-purple-600">
+                    <div class="pt-2 pb-3 space-y-1  bg-black">
                         
-                        <ResponsiveNavLink :href="route('News')" :active="route().current('')">
-                            News
+                        <ResponsiveNavLink class="hover:text-pink-600  text-purple-600 font-aclonica border-pink-600" :href="route('dashboard')" :active="route().current('')">
+                                    News
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('About')" :active="route().current('')">
+                        <ResponsiveNavLink class="hover:text-pink-600  text-purple-600 font-aclonica border-pink-600" :href="route('dashboard')" :active="route().current('')">
                             About
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('Explore')" :active="route().current('')">
+                        <ResponsiveNavLink class="hover:text-pink-600  text-purple-600 font-aclonica border-pink-600" :href="route('dashboard')" :active="route().current('')">
                             Explore
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('Forum')" :active="route().current('')">
+                        <ResponsiveNavLink class="hover:text-pink-600  text-purple-600 font-aclonica border-pink-600" :href="route('dashboard')" :active="route().current('')">
                             Forum
                         </ResponsiveNavLink>
-                        <ResponsiveNavLink :href="route('Eshop')" :active="route().current('')">
+                        <ResponsiveNavLink class="hover:text-pink-600  text-purple-600 font-aclonica border-pink-600" :href="route('dashboard')" :active="route().current('')">
                             Eshop
                         </ResponsiveNavLink>
                     </div>
 
                     <!-- Responsive Settings Options -->
-                    <div class="pt-4 pb-1 border-t border- bg-pink-600">
+                    <div class="pt-4 pb-1 border-t border- font-aclonica bg-pink-600 text-black">
                         <div class="px-4">
                             <div class="font-medium text-base text-black">
                                 {{ $page.props.auth.user.name }}
@@ -156,7 +155,7 @@ const showingNavigationDropdown = ref(false);
                             <div class="font-medium text-sm text-black">{{ $page.props.auth.user.email }}</div>
                         </div>
 
-                        <div class="mt-3 space-y-1 text-black">
+                        <div class="mt-3 space-y-1 text-black font-aclonica ">
                             <ResponsiveNavLink :href="route('profile.edit')"> Profile </ResponsiveNavLink>
                             <ResponsiveNavLink :href="route('logout')" method="post" as="button">
                                 Log Out
@@ -173,7 +172,100 @@ const showingNavigationDropdown = ref(false);
 
             <!-- !Page Content -->
             <main>
-                <slot />
+            <section id="homepage_carousel">
+                <Carousel>
+
+<!-- Slider main container -->
+<div class="bg-pink-600 text-purple-600 font-aclonica flex flex-col">
+<div class="swiper h-auto mt-8 mb-8 w-full">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide flex flex-col text-center items-center text-lg ">
+      <div class="itemimage block m-0 p-0 text-center">
+<img class="py-10" src="/img/Makeup/eyes/eyeshadow palettes/eyeshadow-palette-sixteenpan-zoom-in.jpg" alt="item" width="200px" height="200px">
+</div>
+<div class="itembody text-center p-0">
+<div class="itemtitle text-xl mb-1 p-2.5 font-bold"> Eyeshadow palette</div>
+<div class="itemdescription p-2.5 m-2.5"> Eyeshadow palette sixteen <br> pan natural colours</div>
+<div ><a href="#"><span class="text-lg text-purple-600 hover:text-pink-600 bg-black border-none rounded-xl p-2">See the product</span></a></div>
+</div>
+</div>
+    
+<div class="swiper-slide">
+  <div class="itemimage">
+<img src="/img/Makeup/lips/lipsticks/lipsticks-lipstick-alone.jpg" alt="item" width="200px" height="200px">
+</div>
+<div class="itembody">
+<div class="itemtitle"> Lipstick red </div>
+<div class="itemdescription"> Lipstick red</div>
+<div><a href="#">See the product</a></div>
+</div>
+</div>
+
+
+<div class="swiper-slide">
+  <div class="itemimage">
+<img src="/img/Makeup/complexion products/highlighters/highlighter-zoom-in.jpg" alt="item" width="200px" height="200px">
+</div>
+<div class="itembody">
+<div class="itemtitle"> Highlighter</div>
+<div class="itemdescription"> Highlighter</div>
+<div><a href="#">See the product</a></div>
+</div>
+</div>
+
+
+<div class="swiper-slide">
+  <div class="itemimage">
+<img src="/img/Makeup/complexion products/bronzers/bronzer.jpg" alt="item" width="180px" height="230px">
+</div>
+<div class="itembody">
+<div class="itemtitle"> Bronzer</div>
+<div class="itemdescription"> Bronzer</div>
+<div><a href="#">See the product</a></div>
+</div>
+</div>
+
+<div class="swiper-slide">
+  <div class="itemimage">
+<img src="/img/Makeup/complexion products/face palettes/face-palettes.jpg" alt="item" width="200px" height="200px">
+</div><div class="itembody">
+<div class="itemtitle"> Face palettes</div>
+<div class="itemdescription"> Face palette</div>
+<div><a href="#">See the product</a></div>
+</div>
+</div>
+    </div>
+   
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+                </Carousel>
+            </section>
+            <section id="homepage_articles">
+                <HomepageHero>
+                    <div id="Homepage_hero_wrapper" class=" relative my-20 flex flex-row  text-black justify-center items-center text-center font-aclonica bg-black ">
+                            <img id="Homepage_herobanner-bg-image" class=" xs:w-11/12  sm:w-11/12 md:w-11/12 lg:w-7/12 my-25" src="/img/Makeup/illustrations/illustration-makeup-brushes-magical.jpg" >
+                                <div id="homepage-hero-banner-message-box" class=" absolute xs:mt-56 xs:ml-32 sm:mt-72 sm:ml-64 md:mt-80 md:ml-80 lg:mt-80 lg:ml-80 w-60 h-32 text-center flex flex-col justify-center rounded-2xl  bg-pink-600">
+                                    <h3 class="mb-3">Magical moments with makeup</h3>
+                                    
+                                            <div id="homepage-hero-banner-show-button" class="text-center  text-purple-600 hover:text-pink-600  ">
+                                            <a href="#"><span class="bg-black py-2 px-5  rounded-xl">Show</span></a>
+                                            </div>
+                                </div>
+                    </div>
+                </HomepageHero>
+            </section>
             </main>
             <!-- !Footer Content -->
             <footer class="flex w-screen  xs:flex-col sm:flex-col md:flex-row lg:flex-row justify-evenly  font-aclonica  text-purple-600">

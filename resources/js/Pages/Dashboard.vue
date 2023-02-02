@@ -1,8 +1,8 @@
 <script setup>
-import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
-import Carousel from "@/Components/Carousel.vue";
-import HomepageArticles from "@/Components/HomepageArticles.vue";
-import { Head } from "@inertiajs/vue3";
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import Carousel from '@/Components/Carousel.vue';
+import HomepageArticles from '@/Components/HomepageHero.vue';
+import { Head } from '@inertiajs/vue3';
 </script>
 
 <template>
@@ -10,16 +10,18 @@ import { Head } from "@inertiajs/vue3";
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="bg-white font-semibold text-xl text-black leading-tight">
-                Dashboard
-            </h2>
+            <h2 class="font-semibold text-xl text-black leading-tight bg-black">Dashboard</h2>
         </template>
-        <!-- <Carousel>
-            <template #carousel> </template>
-        </Carousel> -->
-        <HomepageArticles>
-            <template #homepagearticles> </template>
-        </HomepageArticles>
+<Carousel>
+<template #carousel>
+
+</template>
+</Carousel>
+<HomepageHero>
+    <template #homepagearticles>
+
+    </template>
+</HomepageHero>
 
         <!--  <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">

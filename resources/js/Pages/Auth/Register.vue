@@ -26,7 +26,7 @@ const submit = () => {
         <Head title="Register" />
 
         <form @submit.prevent="submit">
-            <div>
+            <div class="font-aclonica">
                 <InputLabel for="name" value="Name" />
 
                 <TextInput
@@ -42,7 +42,7 @@ const submit = () => {
                 <InputError class="mt-2" :message="form.errors.name" />
             </div>
 
-            <div class="mt-4">
+            <div class="font-aclonica mt-4">
                 <InputLabel for="email" value="Email" />
 
                 <TextInput
@@ -57,7 +57,7 @@ const submit = () => {
                 <InputError class="mt-2" :message="form.errors.email" />
             </div>
 
-            <div class="mt-4">
+            <div class="font-aclonica mt-4">
                 <InputLabel for="password" value="Password" />
 
                 <TextInput
@@ -69,10 +69,10 @@ const submit = () => {
                     autocomplete="new-password"
                 />
 
-                <InputError class="mt-2" :message="form.errors.password" />
+                <InputError class="font-aclonica mt-2" :message="form.errors.password" />
             </div>
 
-            <div class="mt-4">
+            <div class="font-aclonica mt-4">
                 <InputLabel for="password_confirmation" value="Confirm Password" />
 
                 <TextInput
@@ -87,7 +87,7 @@ const submit = () => {
                 <InputError class="mt-2" :message="form.errors.password_confirmation" />
             </div>
 
-            <div class="flex items-center justify-end mt-4">
+            <div class="font-aclonica flex items-center justify-end mt-4">
                 <Link
                     :href="route('login')"
                     class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
