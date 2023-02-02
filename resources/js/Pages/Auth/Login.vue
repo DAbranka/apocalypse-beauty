@@ -34,7 +34,7 @@ const submit = () => {
         </div>
 
         <form @submit.prevent="submit">
-            <div>
+            <div class="font-aclonica">
                 <InputLabel for="email" value="Email" />
 
                 <TextInput
@@ -50,7 +50,7 @@ const submit = () => {
                 <InputError class="mt-2" :message="form.errors.email" />
             </div>
 
-            <div class="mt-4">
+            <div class="font-aclonica mt-4">
                 <InputLabel for="password" value="Password" />
 
                 <TextInput
@@ -62,26 +62,26 @@ const submit = () => {
                     autocomplete="current-password"
                 />
 
-                <InputError class="mt-2" :message="form.errors.password" />
+                <InputError class="font-aclonica mt-2" :message="form.errors.password" />
             </div>
 
-            <div class="block mt-4">
+            <div class="font-aclonica block mt-4">
                 <label class="flex items-center">
                     <Checkbox name="remember" v-model:checked="form.remember" />
-                    <span class="ml-2 text-sm text-gray-600">Remember me</span>
+                    <span class="font-aclonica ml-2 text-sm text-gray-600">Remember me</span>
                 </label>
             </div>
 
-            <div class="flex items-center justify-end mt-4">
+            <div class="font-aclonica flex items-center justify-end mt-4">
                 <Link
                     v-if="canResetPassword"
                     :href="route('password.request')"
-                    class="underline text-sm text-gray-600 hover:text-purple-600 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-600"
+                    class="font-aclonica underline text-sm text-gray-600 hover:text-purple-600 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-600"
                 >
                     Forgot your password?
                 </Link>
 
-                <PrimaryButton class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                <PrimaryButton class="font-aclonica ml-4 bg-purple-600 hover:bg-pink-600" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                     Log in
                 </PrimaryButton>
             </div>
