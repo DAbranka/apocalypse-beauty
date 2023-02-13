@@ -25,6 +25,7 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 })
+->name('welcome')
 // ->middleware(['auth', 'verified'])
 ;
 

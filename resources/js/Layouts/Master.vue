@@ -1,3 +1,8 @@
+
+<script setup>
+    import NavLink from '@/Components/NavLink.vue';
+</script>
+
 <template>
     <body >
         <!-- * HEADER -->
@@ -7,11 +12,22 @@
             <nav class="bg-pink border-b border-purple-600">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
-                        <div>
+                        <div class="flex">
+
                             <!-- * LOGO CONTAINER-->
                             <div class="shrink-0 flex items-center">
                                 <img class="w-16 items-start mt-0.5" src="/img/logo/apocalypse-beauty-logo-transparent.png">
                             </div>
+
+                            <!-- * NAV LINK COMPONENT -->
+                            <NavLink :href="route('welcome')" :active="route().current('')">
+                                <div class="flex">
+                                    <h1 class="font-aclonica text-xl text-center font-bold uppercase text-purple-600">
+                                        Apocalypse Beauty
+                                    </h1>
+                                </div>
+                            </NavLink>
+
                         </div>
                     </div>
                 </div>
