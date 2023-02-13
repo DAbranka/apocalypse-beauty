@@ -99,7 +99,7 @@
                 </ul>
             </div>
 
-            <!-- * 3ND COL - contact -->
+            <!-- * 3RD COL - contact -->
             <div class="px-3 flex flex-col justify-start leading-loose">
                 <!-- * title -->
                 <h4 class="text-lg xs:text-center sm:text-center md:text-start lg:text-start">
@@ -115,6 +115,7 @@
                 </ul>
             </div>
 
+            <!-- * 4TH COL - copyright -->
             <div class="flex flex-col text-center items-center justify-evenly bg-black">
                 <p>
                     <span class="text-3xl">©</span>
