@@ -31,7 +31,7 @@ const showingNavigationDropdown = ref(false);
                             </div>
 
                             <NavLink
-                                :href="route('dashboard')"
+                                :href="route('welcome')"
                                 :active="route().current('')"
                             >
                                 <div class="flex">
@@ -547,7 +547,7 @@ const showingNavigationDropdown = ref(false);
                         </ul>
                     </div>
                 </div>
-                
+
                 <div
                     class="flex flex-col text-center items-center justify-evenly bg-black"
                 >

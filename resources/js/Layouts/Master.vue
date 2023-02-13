@@ -19,7 +19,7 @@
                                 <img class="w-16 items-start mt-0.5" src="/img/logo/apocalypse-beauty-logo-transparent.png">
                             </div>
 
-                            <!-- * NAV LINK COMPONENT -->
+                            <!-- * LOGO LINK TO WELCOME PAGE -->
                             <NavLink :href="route('welcome')" :active="route().current('')">
                                 <div class="flex">
                                     <h1 class="font-aclonica text-xl text-center font-bold uppercase text-purple-600">
@@ -27,6 +27,43 @@
                                     </h1>
                                 </div>
                             </NavLink>
+
+                            <!-- * NAVIGATION LINKS -->
+
+                            <!-- * NEWS -->
+                            <div class="font-aclonica hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-purple-600">
+                                <NavLink :href="route('News')" :active="route().current('')">
+                                    News
+                                </NavLink>
+                            </div>
+
+                            <!-- * ABOUT -->
+                            <div class="font-aclonica hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-purple-600">
+                                <NavLink :href="route('News')" :active="route().current('')">
+                                    About
+                                </NavLink>
+                            </div>
+
+                            <!-- * EXPLORE -->
+                            <div class="font-aclonica hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-purple-600">
+                                <NavLink :href="route('News')" :active="route().current('')">
+                                    Explore
+                                </NavLink>
+                            </div>
+
+                            <!-- * FORUM -->
+                            <div class="font-aclonica hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-purple-600">
+                                <NavLink :href="route('News')" :active="route().current('')">
+                                    Forum
+                                </NavLink>
+                            </div>
+
+                            <!-- * ESHOP -->
+                            <div class="font-aclonica hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-purple-600">
+                                <NavLink :href="route('News')" :active="route().current('')">
+                                    e-Shop
+                                </NavLink>
+                            </div>
 
                         </div>
                     </div>
