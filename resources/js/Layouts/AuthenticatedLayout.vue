@@ -459,7 +459,7 @@ const showingNavigationDropdown = ref(false);
                             >
                         </h1>
                     </div>
-                    
+
                     <div class="px-3 flex flex-col justify-start leading-loose">
                         <h4
                             class="text-lg xs:text-center sm:text-center md:text-start lg:text-start"
@@ -547,6 +547,7 @@ const showingNavigationDropdown = ref(false);
                         </ul>
                     </div>
                 </div>
+                
                 <div
                     class="flex flex-col text-center items-center justify-evenly bg-black"
                 >

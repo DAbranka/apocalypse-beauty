@@ -112,17 +112,15 @@
                             rue de Mulhouse, 36 <br> 4000 LIEGE
                         </a>
                     </li>
-                    <li>
-                        <a href="#" class="text-pink-600 hover:text-purple-600">
-                            Privacy
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-pink-600 hover:text-purple-600">
-                            Cookies
-                        </a>
-                    </li>
                 </ul>
+            </div>
+
+            <div class="flex flex-col text-center items-center justify-evenly bg-black">
+                <p>
+                    <span class="text-3xl">©</span>
+                    2023 Copyright: Apocalypse-Beauty.com
+                </p>
+                <img class="w-56" src="https://paddleinmastery.com/wp-content/uploads/elementor/thumbs/Payment-Method-logos-p3sjdy67e0tvrapzvo4v20g49x3h6ho46o4ecsisxw.png">
             </div>
 
         </div>
