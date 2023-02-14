@@ -44,7 +44,7 @@ const swiper = new Swiper('.swiper', {
 <div class="itembody text-center p-0">
 <div class="itemtitle text-xl mb-1 p-2.5 font-bold"> Eyeshadow palette</div>
 <div class="itemdescription p-2.5 m-2.5"> Eyeshadow palette sixteen <br> pan natural colours</div>
-<div ><a href="#"><span class="text-lg text-purple-600 hover:text-pink-600 bg-black border-none rounded-xl p-2">See the product</span></a></div>
+<div ><a href="#"><span class="text-lg text-purple-600 hover:text-pink-600 bg-zinc-800 border-none rounded-xl p-2">See the product</span></a></div>
 </div>
 </div>
     

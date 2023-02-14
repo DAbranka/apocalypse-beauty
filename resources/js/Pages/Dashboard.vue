@@ -11,7 +11,7 @@ import { Head } from '@inertiajs/vue3';
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-black leading-tight bg-black">Dashboard</h2>
+            <h2 class="font-aclonica text-xl text-black leading-tight bg-zinc-800">Dashboard</h2>
         </template>
 <HomepageHero>
     <template #homepageahero>

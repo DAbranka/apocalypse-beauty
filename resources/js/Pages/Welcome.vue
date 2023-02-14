@@ -17,7 +17,7 @@ import { Head } from '@inertiajs/vue3';
         </template>
 
         <HomepageHero>
-            <template #homepagearticles>
+            <template #homepagehero>
 
             </template>
         </HomepageHero>

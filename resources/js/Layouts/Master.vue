@@ -13,7 +13,7 @@ const showingNavigationDropdown = ref(false);
 
 <template>
     <div>
-        <div class="min-h-screen bg-black">
+        <div class="min-h-screen bg-zinc-800">
             <nav class="bg-pink border-b border-purple-600">
                 <!-- !Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -124,7 +124,7 @@ const showingNavigationDropdown = ref(false);
                                     showingNavigationDropdown =
                                         !showingNavigationDropdown
                                 "
-                                class="inline-flex items-center justify-center p-2 rounded-md text-pink-600 hover:text-black hover:bg-purple-600 focus:outline-none focus:bg-black focus:text-pink-600 transition duration-150 ease-in-out"
+                                class="inline-flex items-center justify-center p-2 rounded-md text-pink-600 hover:text-black hover:bg-purple-600 focus:outline-none focus:bg-zinc-800 focus:text-pink-600 transition duration-150 ease-in-out"
                             >
                                 <svg
                                     class="h-6 w-6"
@@ -207,7 +207,7 @@ const showingNavigationDropdown = ref(false);
                 class="flex w-screen xs:flex-col sm:flex-col md:flex-row lg:flex-row justify-evenly font-aclonica text-purple-600"
             >
                 <div
-                    class="w-screen pt-10 flex xs:flex-col sm:flex-col md:flex-row lg:flex-row sm:justify-evenly md:justify-evenly lg:justify-evenly bg-black pb-6"
+                    class="w-screen pt-10 flex xs:flex-col sm:flex-col md:flex-row lg:flex-row sm:justify-evenly md:justify-evenly lg:justify-evenly bg-zinc-800 pb-6"
                 >
                     <div
                         class="flex flex-wrap justify-center xs:flex-col sm:flex-col md:flex-row lg:flex-row items-center"
@@ -312,7 +312,7 @@ const showingNavigationDropdown = ref(false);
                     </div>
                 </div>
                 <div
-                    class="flex flex-col text-center items-center justify-evenly bg-black"
+                    class="flex flex-col text-center items-center justify-evenly bg-zinc-800"
                 >
                     <p class="">
                         <span class="text-3xl">© </span>2023 Copyright:

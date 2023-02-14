@@ -3,7 +3,7 @@
         <HomepageArticle>
             <div
                 id="Homepage_hero_wrapper"
-                class="relative my-20 flex flex-row text-black justify-center items-center text-center font-aclonica bg-black"
+                class="relative my-20 flex flex-row text-black justify-center items-center text-center font-aclonica bg-zinc-800"
             >
                 <img
                     id="Homepage_herobanner-bg-image"
@@ -21,7 +21,7 @@
                         class="text-center text-purple-600 hover:text-pink-600"
                     >
                         <a href="#"
-                            ><span class="bg-black py-2 px-5 rounded-xl"
+                            ><span class="bg-zinc-800 py-2 px-5 rounded-xl"
                                 >Show</span
                             ></a
                         >
