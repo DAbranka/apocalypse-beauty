@@ -15,16 +15,16 @@ const showingNavigationDropdown = ref(false);
 
 <template>
     <div>
-        <div class="min-h-screen bg-black">
-            <nav class="bg-pink border-b border-purple-600">
-                <!-- Primary Navigation Menu -->
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="flex justify-between h-16">
+        <div class="min-h-screen bg-zinc-800">
+            <nav class="bg-pink border-b border-purple-600 my-auto pt-1.5 bg-zinc-800">
+                <!-- !Primary Navigation Menu -->
+                <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-4">
+                    <div class="flex justify-between h-16 my-6 bg-zinc-800">
                         <div class="flex">
                             <!-- !Logo -->
                             <div class="shrink-0 flex items-center">
                                 <img
-                                    class="w-16 items-start mt-0.5"
+                                    class="w-24 items-start my-6"
                                     src="/img/logo/apocalypse-beauty-logo-transparent.png"
                                     alt=""
                                 />
@@ -36,7 +36,7 @@ const showingNavigationDropdown = ref(false);
                             >
                                 <div class="flex">
                                     <h1
-                                        class="font-aclonica text-xl text-center font-bold uppercase text-purple-600"
+                                        class="font-aclonica text-5xl text-center font-bold uppercase text-purple-600"
                                     >
                                         Apocalypse Beauty
                                     </h1>
@@ -132,7 +132,7 @@ const showingNavigationDropdown = ref(false);
                                 class="inline-flex items-center justify-center p-2 rounded-md text-pink-600 hover:text-black hover:bg-purple-600 focus:outline-none focus:bg-black focus:text-pink-600 transition duration-150 ease-in-out"
                             >
                                 <svg
-                                    class="h-6 w-6"
+                                    class="h12 w-12"
                                     stroke="currentColor"
                                     fill="none"
                                     viewBox="0 0 24 24"
@@ -173,7 +173,7 @@ const showingNavigationDropdown = ref(false);
                     }"
                     class="sm:hidden"
                 >
-                    <div class="pt-2 pb-3 space-y-1 bg-black">
+                    <div class="pt-2 pb-3 space-y-1 bg-zinc-800 text-xl">
                         <ResponsiveNavLink
                             class="hover:text-pink-600 text-purple-600 font-aclonica border-pink-600"
                             :href="route('News')"
@@ -249,7 +249,7 @@ const showingNavigationDropdown = ref(false);
                     <HomepageHero>
                         <div
                             id="Homepage_hero_wrapper"
-                            class="relative my-20 flex flex-row text-black justify-center items-center text-center font-aclonica bg-black"
+                            class="relative my-20 flex flex-row text-black justify-center items-center text-center font-aclonica bg-zinc-800"
                         >
                             <img
                                 id="Homepage_herobanner-bg-image"
@@ -270,7 +270,7 @@ const showingNavigationDropdown = ref(false);
                                 >
                                     <a href="#"
                                         ><span
-                                            class="bg-black py-2 px-5 rounded-xl"
+                                            class="bg-zinc-800 py-2 px-5 rounded-xl"
                                             >Show</span
                                         ></a
                                     >
@@ -323,7 +323,7 @@ const showingNavigationDropdown = ref(false);
                                             <div>
                                                 <a href="#"
                                                     ><span
-                                                        class="text-lg text-purple-600 hover:text-pink-600 bg-black border-none rounded-xl p-2"
+                                                        class="text-lg text-purple-600 hover:text-pink-600 bg-zinc-800 border-none rounded-xl p-2"
                                                         >See the product</span
                                                     ></a
                                                 >
@@ -438,7 +438,7 @@ const showingNavigationDropdown = ref(false);
                 class="flex w-screen xs:flex-col sm:flex-col md:flex-row lg:flex-row justify-evenly font-aclonica text-purple-600"
             >
                 <div
-                    class="w-screen pt-10 flex xs:flex-col sm:flex-col md:flex-row lg:flex-row sm:justify-evenly md:justify-evenly lg:justify-evenly bg-black pb-6"
+                    class="w-screen pt-10 flex xs:flex-col sm:flex-col md:flex-row lg:flex-row sm:justify-evenly md:justify-evenly lg:justify-evenly bg-zinc-800 pb-6"
                 >
                     <div
                         class="flex flex-wrap justify-center xs:flex-col sm:flex-col md:flex-row lg:flex-row items-center"
@@ -543,7 +543,7 @@ const showingNavigationDropdown = ref(false);
                     </div>
                 </div>
                 <div
-                    class="flex flex-col text-center items-center justify-evenly bg-black"
+                    class="flex flex-col text-center items-center justify-evenly bg-zinc-800"
                 >
                     <p class="">
                         <span class="text-3xl">© </span>2023 Copyright:

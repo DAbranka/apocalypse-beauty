@@ -1,6 +1,6 @@
 <script setup>
 import Master from "@/Layouts/Master.vue";
-import HomepageArticles from "@/Components/HomepageArticles.vue";
+import HomepageHero from "@/Components/HomepageHero.vue";
 import { Head } from "@inertiajs/vue3";
 import Articles from "@/Components/Articles.vue";
 </script>
