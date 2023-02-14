@@ -26,7 +26,7 @@ Route::get('/', function () {
     ]);
 })
 ->name('welcome')
-// ->middleware(['auth', 'verified'])
+->middleware(['auth', 'verified'])
 ;
 
 Route::get('/dashboard', function () {

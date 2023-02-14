@@ -4,22 +4,20 @@ import Carousel from "@/Components/Carousel.vue";
 import HomepageHero from "@/Components/HomepageHero.vue";
 import Stream from "@/Components/Stream.vue";
 import { Head } from "@inertiajs/vue3";
-import Master from "@/Layouts/Master.vue";
+import WelcomeLayout from "@/Layouts/WelcomeLayout.vue";
 </script>
 
-<!-- ! -->
-<!-- <template>
+<template>
     <Head title="Apocalypse Beauty" />
 
-    <AuthenticatedLayout>
+    <WelcomeLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-black leading-tight">
-                Accueil
+            <h2 class="font-semibold text-xl text-black leading-tight bg-black">
+                Dashboard
             </h2>
         </template>
-
         <HomepageHero>
-            <template #homepagearticles> </template>
+            <template #homepageahero> </template>
         </HomepageHero>
 
         <Stream>
@@ -27,18 +25,7 @@ import Master from "@/Layouts/Master.vue";
         </Stream>
 
         <Carousel>
-            <template #homestream> </template>
+            <template #carousel> </template>
         </Carousel>
-
-        <template #footer> </template>
-    </AuthenticatedLayout>
-</template> -->
-<!-- ! -->
-
-<template>
-    <master>
-        <h1>
-            MAIN CONTENT FROM THE WELCOME Vue FILE
-        </h1>
-    </master>
+    </WelcomeLayout>
 </template>
